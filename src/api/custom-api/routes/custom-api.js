@@ -10,9 +10,9 @@ module.exports = {
       },
     },
     {
-      method: "POST",
-      path: "/custom-api/make-pdf",
-      handler: "custom-api.makePDF",
+      method: "GET",
+      path: "/custom-api/get-all-pdfs",
+      handler: "custom-api.getAllPdfs",
       config: {
         policies: [],
         middlewares: [],

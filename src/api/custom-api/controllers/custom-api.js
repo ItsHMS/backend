@@ -14,11 +14,11 @@ module.exports = {
       ctx.response.badRequest(err);
     }
   },
-  makePDF: async (ctx, next) => {
+  getAllPdfs: async (ctx, next) => {
     try {
       ctx.body = await strapi
-        .service("api::custom-api.make-pdf")
-        .makePDF(ctx);
+        .service("api::custom-api.get-all-pdfs")
+        .getAllPdfs(ctx);
     } catch (err) {
       ctx.response.badRequest(err);
     }
