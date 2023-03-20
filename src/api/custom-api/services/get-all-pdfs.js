@@ -17,7 +17,7 @@ module.exports = () => ({
       );
       let pdfs = user.pdfs;
       if (!pdfs && !ctx?.query?.pdfID) {
-        return "No PDF files exist";
+        return "No PDF Found";
       }
       if (ctx?.query?.pdfID) {
         if (!pdfs) {
