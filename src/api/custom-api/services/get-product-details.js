@@ -50,7 +50,7 @@ module.exports = () => ({
       let prompt = `Generate product images with the following title "${ctx.request.body.title}" and specifications "${ctx.request.body.specification}" ${end}`;
       console.log(prompt);
       const configuration = new Configuration({
-        apiKey: "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",
+        apiKey: "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",
       });
       const openai = new OpenAIApi(configuration);
       if (type == "image") {
